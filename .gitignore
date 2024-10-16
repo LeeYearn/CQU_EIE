@@ -19,6 +19,11 @@ _deps
 # External projects
 *-prefix/
 
+### Android ###
+.idea/
+build/
+
+
 ### ROS ###
 devel/
 logs/
