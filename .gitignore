@@ -19,6 +19,9 @@ _deps
 # External projects
 *-prefix/
 
+### VSCode ###
+.vscode/
+
 ### ROS ###
 devel/
 logs/
