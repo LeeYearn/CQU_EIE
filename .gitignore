@@ -20,7 +20,7 @@ _deps
 *-prefix/
 
 ### VSCode ###
-.vscode/
+.vscode/*
 
 ### ROS ###
 devel/
