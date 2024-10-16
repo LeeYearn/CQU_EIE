@@ -19,9 +19,6 @@ _deps
 # External projects
 *-prefix/
 
-### VSCode ###
-.vscode/*
-
 ### ROS ###
 devel/
 logs/
@@ -76,11 +73,6 @@ CATKIN_IGNORE
 
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
