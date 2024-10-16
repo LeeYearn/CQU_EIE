@@ -22,7 +22,7 @@ _deps
 ### ROS ###
 devel/
 logs/
-build/
+build/*
 bin/
 lib/
 msg_gen/
@@ -45,6 +45,7 @@ devel_isolated/
 
 # Ignore generated docs
 *.dox
+*.docs
 *.wikidoc
 
 # eclipse stuff
