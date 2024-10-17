@@ -23,6 +23,9 @@ _deps
 .idea/
 build/
 
+### dataset ###
+dataEngineer/digitReco/data/mnist_test.csv
+dataEngineer/digitReco/data/mnist_train.csv
 
 ### ROS ###
 devel/
