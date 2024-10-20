@@ -4,7 +4,7 @@ project(lio_ndt)
 #Release:发布版本进行优化，Debug：调试版本不进行优化
 set(CMAKE_BUILD_TYPE "Debug") 
 set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 # add_compile_options(-std=c++14)
 # add_definitions(-std=c++14) 
 
