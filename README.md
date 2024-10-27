@@ -1,8 +1,6 @@
 <h1 align="center">
 
-<a href="https://eie.cqu.edu.cn/" target="_blank">
-  <img src="https://www2.cqu.edu.cn/Uploads/CQUmain/nowvi.png">
-</a>
+[![](https://english.cqu.edu.cn/img/logo.png)](https://eie.cqu.edu.cn/)
 
 </h1>
 
