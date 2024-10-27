@@ -1,6 +1,6 @@
 <h1 align="center">
 
-[![]([https://english.cqu.edu.cn/img/logo.png](https://www2.cqu.edu.cn/Uploads/CQUmain/nowvi.png))](https://eie.cqu.edu.cn/)
+[![](https://www2.cqu.edu.cn/Uploads/CQUmain/nowvi.png)](https://eie.cqu.edu.cn/)
 
 </h1>
 
