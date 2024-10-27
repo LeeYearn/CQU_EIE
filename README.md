@@ -1,6 +1,8 @@
 <h1 align="center">
 
-[![](https://www2.cqu.edu.cn/Uploads/CQUmain/nowvi.png)](https://eie.cqu.edu.cn/)
+<a href="https://eie.cqu.edu.cn/" target="_blank">
+  <img src="https://www2.cqu.edu.cn/Uploads/CQUmain/nowvi.png">
+</a>
 
 </h1>
 
