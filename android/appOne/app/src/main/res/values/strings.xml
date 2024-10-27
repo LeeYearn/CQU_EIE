@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">appOne</string>
+    <string name="app_name">出生</string>
+    <string name="viewOneTextOne">Hello, World</string>
+    <string name="viewOneButtonOne">跳转</string>
+
+    <string name="viewTwoTextOne">你来啦，嘻嘻！</string>
+    <string name="viewTwoButtonOne">回去吧</string>
 </resources>
