@@ -1,7 +1,8 @@
 <h1 align="center">
 
 <a href="https://eie.cqu.edu.cn/" target="_blank">
-  <img src="./.vscode/CQULogo.svg">
+  <!-- <img src="./.vscode/CQU_Logo.svg"> -->
+  <img src="./.vscode/CQU_EIE_Logo.svg">
 </a>
 
 </h1>
