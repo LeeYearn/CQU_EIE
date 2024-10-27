@@ -1,6 +1,6 @@
 <h1 align="center">
 
-<a href="https://developer.huawei.com/consumer/cn/develop/" target="_blank">
+<a href="https://developer.huawei.com/consumer/cn/develop/" >
   <img src="https://lh3.googleusercontent.com/P5QMyNHTevjUPkQYYC1bo5-gBdJkwOqgXpIwL80JgIm4CO-yzK32OOX3pr7y8b9YNhXQZotdsgD7JLolmWZx5BkvEvZwofL7I8CLHBOINY5O09KlrQ=rwa-s0">
 </a>
 
