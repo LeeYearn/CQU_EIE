@@ -1,6 +1,8 @@
 <h1 align="center">
 
-[![](https://english.cqu.edu.cn/img/logo.png)](https://eie.cqu.edu.cn/)
+<a href="https://eie.cqu.edu.cn/" target="_blank">
+  <img src="https://raw.githubusercontent.com/haowang-cqu/CQU-Logo/e5f1702246c3b02ab3e8b4fde3092457cd54bece/%E6%A0%A1%E5%BE%BD+%E4%B8%AD%E8%8B%B1%E6%96%87%E6%A0%A1%E5%90%8D/%E6%A0%A1%E5%BE%BD+%E4%B8%AD%E8%8B%B1%E6%96%87%E6%A0%A1%E5%90%8D_%E8%93%9D%E8%89%B2.svg">
+</a>
 
 </h1>
 
