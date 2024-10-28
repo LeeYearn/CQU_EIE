@@ -1,12 +1,13 @@
-<div style="text-align: center;">
+<div align= "center">
   <a href="https://developer.huawei.com/consumer/cn/develop/">
     <img src="./README/img/AndroidLogo.webp">
   </a>
+  <h1 align="center">
+    智能座舱与人机交互 Android 开发
+  </h1>
 </div>
 
-<h1 align="center">
-智能座舱与人机交互 Android 开发
-</h1>
+
 
 - 前情学习 1： [基本项目结构梳理](#基本项目结构梳理)
 
