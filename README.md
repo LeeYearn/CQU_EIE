@@ -1,8 +1,5 @@
 <a href="https://eie.cqu.edu.cn/" target="_blank" style="text-decoration: none;">
-    <div style="display: flex; justify-content: center; align-items: center; background: #6A2686; height: 100px; border-radius: 15px;">
-        <img src="./.vscode/top_logo1.svg" alt="图片1" style="width: 300px; height: auto; margin-right: 20px;">
-        <img src="./.vscode/top_logo2.svg" alt="图片2" style="width: 300px; height: auto;">
-    </div>
+   <img src="./.vscode/CQU_EIE_Logo.svg">
 </a>
 
 
