@@ -1,6 +1,8 @@
-<a href="https://developer.huawei.com/consumer/cn/develop/" align="center">
-  <img src="./README/img/AndroidLogo.webp">
-</a>
+<div style="text-align: center;">
+  <a href="https://developer.huawei.com/consumer/cn/develop/">
+    <img src="./README/img/AndroidLogo.webp">
+  </a>
+</div>
 
 <h1 align="center">
 智能座舱与人机交互 Android 开发
