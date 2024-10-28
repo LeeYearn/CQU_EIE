@@ -21,6 +21,7 @@ _deps
 
 ### Android ###
 .idea/
+SDK/
 build/
 
 ### dataset ###
