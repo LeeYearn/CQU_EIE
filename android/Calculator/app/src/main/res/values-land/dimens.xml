@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="empty_height">0dp</dimen>
+    <dimen name="button_width">10dp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="back_padding">64dp</dimen>
+    <dimen name="display_marginTop">0dp</dimen>
+    <dimen name="display_empty_padding">0dp</dimen>
+    <dimen name="display_answer_padding">10dp</dimen>
+    <dimen name="display_input_padding">10dp</dimen>
+</resources>

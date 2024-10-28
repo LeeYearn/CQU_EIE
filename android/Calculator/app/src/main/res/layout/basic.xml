@@ -1,34 +1,282 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:padding="16dp">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:id="@+id/display"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_marginTop="@dimen/display_marginTop"
+        android:columnCount="1">
 
-        <Button
-            android:id="@+id/num0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/num0" />
-        <Button
-            android:id="@+id/num1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/num1"/>
-        <Button
-            android:id="@+id/num2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/num2"/>
-    </LinearLayout>
+        <TextView
+            android:id="@+id/resultEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/empty_height"
+            android:gravity="end|bottom"
+            android:padding="@dimen/display_empty_padding" />
 
+        <TextView
+            android:id="@+id/resultInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|bottom"
+            android:padding="@dimen/display_input_padding"
+            android:text="@string/n0"
+            android:textColor="@color/text_color1"
+            android:textSize="32sp" />
 
+        <TextView
+            android:id="@+id/resultAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|bottom"
+            android:padding="@dimen/display_answer_padding"
+            android:text="@string/n0"
+            android:textColor="@color/text_color1"
+            android:textSize="32sp" />
+    </GridLayout>
 
-</LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display"
+        android:layout_marginTop="@dimen/display_marginTop"
+        android:rowCount="5"
+        android:columnCount="4">
+
+        <android.widget.Button
+            android:id="@+id/buttonAC"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/AC"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonBack"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:paddingStart="@dimen/back_start"
+            android:drawableStart="@drawable/back"
+            android:textSize="@dimen/text_size"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null"
+            android:contentDescription="@string/back_description"
+            tools:ignore="RtlSymmetry" />
+        <android.widget.Button
+            android:id="@+id/buttonRoots"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/root"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonDiv"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/div"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+
+        <android.widget.Button
+            android:id="@+id/buttonN7"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n7"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonN8"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n8"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonN9"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n9"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonMulti"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/multi"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+
+        <android.widget.Button
+            android:id="@+id/buttonN4"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n4"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonN5"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n5"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonN6"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n6"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonSub"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/sub"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+
+        <android.widget.Button
+            android:id="@+id/buttonN1"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n1"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonN2"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n2"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonN3"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n3"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/add"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+
+        <android.widget.Button
+            android:id="@+id/buttonE"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:textAllCaps="false"
+            android:text="@string/e"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonN0"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/n0"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null"
+            android:contentDescription="@string/n0_description" />
+
+        <android.widget.Button
+            android:id="@+id/buttonPoint"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/point"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color1"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonEqual"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/equal"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:background="@drawable/button_orange"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+
+    </GridLayout>
+</RelativeLayout>
