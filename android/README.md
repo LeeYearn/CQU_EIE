@@ -1,15 +1,9 @@
-<h1 align="center">
-
-<a href="https://developer.huawei.com/consumer/cn/develop/" target="_blank">
-  <img src="https://lh3.googleusercontent.com/P5QMyNHTevjUPkQYYC1bo5-gBdJkwOqgXpIwL80JgIm4CO-yzK32OOX3pr7y8b9YNhXQZotdsgD7JLolmWZx5BkvEvZwofL7I8CLHBOINY5O09KlrQ=rwa-s0">
+<a href="https://developer.huawei.com/consumer/cn/develop/" align="center">
+  <img src="./README/img/AndroidLogo.webp">
 </a>
 
-</h1>
-
 <h1 align="center">
-
 智能座舱与人机交互 Android 开发
-
 </h1>
 
 - 前情学习 1： [基本项目结构梳理](#基本项目结构梳理)
@@ -20,5 +14,23 @@
 
 
 <h2 id="基本项目结构梳理">基本项目结构梳理</h2>
+
+### 1. 模板创建类型
+- 一般选择 `Empty Views Activity`
+  ![创建模板类型.png](./README/img/创建模板类型.png)
+
+- 进入具体设置后
+  ![创建项目设置.png](./README/img/创建模板设置.png)
+
+  - `Name` 项目名称
+  - `Package name` 默认即可
+  - `Save lacation` 保存地点
+  - `Language` 使用语言
+  - `Minimum SDK` 最低SDK
+  - `Build configuration language` 构建配置语言
+
+
+### 2. 项目结构
+  ![项目结构](./README/img/项目结构.png)
 
 
