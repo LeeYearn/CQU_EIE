@@ -11,9 +11,9 @@
 
 - 前情学习 1： [基本项目结构梳理](#基本项目结构梳理)
 
-- 前请学习 2： [页面跳转](./PageSwitching/)
+- 前请学习 2： [页面跳转](https://github.com/LeeYearn/CQU_EIE/tree/74740977bb3016a14fe1a97644140039688e51ff/android/PageSwitching)
 
-- 课程任务 1： [计算器](./)
+- 课程任务 1： [计算器](https://github.com/LeeYearn/CQU_EIE/tree/ec6e32f3a544fa1fc9bf4c506d65b808d8c12d9d/android/Calculator)
 
 
 <h2 id="基本项目结构梳理">基本项目结构梳理</h2>
