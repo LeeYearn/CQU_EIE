@@ -2,7 +2,7 @@
    <img src="./.vscode/CQU_EIE_Logo.svg">
 </a>
 
-<h1 style="color:#6A2686;" align="center">
+<h1 align="center">
     国家（重庆）卓越工程师学院 2021级 智能网联汽车方向
 </h1>
 
