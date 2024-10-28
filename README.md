@@ -2,9 +2,10 @@
    <img src="./.vscode/CQU_EIE_Logo.svg">
 </a>
 
-<h2 align="center">
-    国家（重庆）卓越工程师学院 2021级 智能网联汽车方向
+<h2 align="center" style="letter-spacing: 6px; line-height: 1.5;">
+    国家（重庆）卓越工程师学院 <br> 2021级 智能网联汽车方向
 </h2>
+
 
 - 必修 1: [车载软件开发基础](./autoSoftDev/)
 
