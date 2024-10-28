@@ -34,6 +34,29 @@
 
 
 ### 2. 项目结构
-  ![项目结构](./README/img/项目结构.png)
+| Root Directory    | 作用
+|:-----------------:|:--------------------------------------------------|
+| .gradle           | android studio自动生成的目录，一般情况不做修改
+| .idea             | android studio自动生成的目录，一般情况不做修改
+| app               | [module模块](#app)
+| gradle            | gradle环境支持文件夹
+| .gitignore        | git源码管理文件
+| build.gradle      | gradle项目自动编译的配置文件
+| gradlew           | 自动完成gradle环境的linux mac脚本, 配合gradle文件夹使用
+| gradlew.bat       | 自动完成gradle环境的windows 脚本, 配合gradle文件夹使用
+| local.properties  | Android SDK NDK环境路径配置
+| setting.gradle    | gradle 项目的子项目包含文件
+
+#### app
+| app Directory    | 作用
+|:-----------------:|:--------------------------------------------------|
+| aa| aa
+| aa| aa
+| aa| aa
+| aa| aa
+| aa| aa
+| aa| aa
+| aa| aa
+
 
 
