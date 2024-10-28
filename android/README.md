@@ -2,7 +2,7 @@
   <a href="https://developer.huawei.com/consumer/cn/develop/">
     <img src="./README/img/AndroidLogo.webp">
   </a>
-  <h1 align="center">
+  <h1>
     智能座舱与人机交互 Android 开发
   </h1>
 </div>
