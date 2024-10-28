@@ -1,16 +1,14 @@
-<h1 align="center">
-
-<a href="https://eie.cqu.edu.cn/" target="_blank">
-  <!-- <img src="./.vscode/CQU_Logo.svg"> -->
-  <img src="./.vscode/CQU_EIE_Logo.svg">
+<a href="https://eie.cqu.edu.cn/" target="_blank" style="text-decoration: none;">
+    <div style="display: flex; justify-content: center; align-items: center; background: #6A2686; height: 100px; border-radius: 15px;">
+        <img src="./.vscode/top_logo1.svg" alt="图片1" style="width: 300px; height: auto; margin-right: 20px;">
+        <img src="./.vscode/top_logo2.svg" alt="图片2" style="width: 300px; height: auto;">
+    </div>
 </a>
 
-</h1>
+
 
 <h2 align="center">
-
-国家（重庆）卓越工程师学院 2021级 智能网联汽车方向课程
-
+    国家（重庆）卓越工程师学院 2021级 智能网联汽车方向课程
 </h2>
 
 - 必修 1: [车载软件开发基础](./autoSoftDev/)
