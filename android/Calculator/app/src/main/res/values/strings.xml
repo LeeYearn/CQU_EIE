@@ -40,4 +40,6 @@
     <string name="back_description">删除</string>
     <string name="root">√</string>
     <string name="root_description">根号</string>
+    <string name="empty"> </string>
+    <string name="empty_description">占位</string>
 </resources>

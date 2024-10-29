@@ -27,7 +27,7 @@
             android:padding="@dimen/display_input_padding"
             android:text="@string/n0"
             android:textColor="@color/text_color1"
-            android:textSize="32sp" />
+            android:textSize="80sp" />
 
         <TextView
             android:id="@+id/resultAnswer"
@@ -36,8 +36,8 @@
             android:gravity="end|bottom"
             android:padding="@dimen/display_answer_padding"
             android:text="@string/n0"
-            android:textColor="@color/text_color1"
-            android:textSize="32sp" />
+            android:textColor="@color/text_color3"
+            android:textSize="40sp" />
     </GridLayout>
 
     <GridLayout
@@ -78,7 +78,7 @@
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
             android:layout_columnWeight="1"
-            android:text="@string/root"
+            android:text="@string/empty"
             android:textSize="@dimen/text_size"
             android:textColor="@color/text_color2"
             android:background="@drawable/button_grey"

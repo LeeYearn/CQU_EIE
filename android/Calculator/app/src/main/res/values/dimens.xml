@@ -4,9 +4,9 @@
     <dimen name="empty_height">384dp</dimen>
     <dimen name="button_width">10dp</dimen>
     <dimen name="button_height">50dp</dimen>
-    <dimen name="back_start">78dp</dimen>
+    <dimen name="back_start">62dp</dimen>
     <dimen name="display_marginTop">16dp</dimen>
     <dimen name="display_empty_padding">50dp</dimen>
-    <dimen name="display_answer_padding">30dp</dimen>
-    <dimen name="display_input_padding">30dp</dimen>
+    <dimen name="display_answer_padding">10dp</dimen>
+    <dimen name="display_input_padding">10dp</dimen>
 </resources>
