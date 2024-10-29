@@ -66,6 +66,7 @@
             android:layout_columnWeight="1"
             android:paddingStart="@dimen/back_start"
             android:drawableStart="@drawable/back"
+            android:gravity="center_vertical|center_horizontal"
             android:textSize="@dimen/text_size"
             android:background="@drawable/button_grey"
             android:layout_margin="5dp"
