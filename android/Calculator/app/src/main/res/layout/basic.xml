@@ -71,7 +71,7 @@
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
             android:layout_columnWeight="1"
-            android:drawableStart="@drawable/back_2"
+            android:drawableStart="@drawable/back"
             android:textSize="@dimen/text_size"
             android:background="@drawable/button_grey"
             android:layout_margin="5dp"
