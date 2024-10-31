@@ -38,8 +38,12 @@
     <string name="AC_description">清零</string>
     <string name="back">back</string>
     <string name="back_description">删除</string>
-    <string name="root">√</string>
-    <string name="root_description">根号</string>
+    <string name="percent">%</string>
+    <string name="percent_description">百分号</string>
+    <string name="left_bracket">(</string>
+    <string name="left_bracket_description">左括号</string>
+    <string name="right_bracket">)</string>
+    <string name="right_bracket_description">右括号</string>
     <string name="empty"> </string>
     <string name="empty_description">占位</string>
 </resources>

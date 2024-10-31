@@ -3,14 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="30dp">
 
     <GridLayout
-        android:id="@+id/display"
+        android:id="@+id/under"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/display_marginTop"
-        android:columnCount="1">
+        android:rowCount="5"
+        android:columnCount="4">
 
         <TextView
             android:id="@+id/resultEmpty"
@@ -19,62 +21,19 @@
             android:gravity="end|bottom"
             android:padding="@dimen/display_empty_padding" />
 
-        <TextView
-            android:id="@+id/resultInput"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="end|bottom"
-            android:padding="@dimen/display_input_padding"
-            android:text="@string/n0"
-            android:textColor="@color/text_color1"
-            android:textSize="80sp" />
-
-        <TextView
-            android:id="@+id/resultAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="end|bottom"
-            android:padding="@dimen/display_answer_padding"
-            android:text="@string/n0"
-            android:textColor="@color/text_color3"
-            android:textSize="40sp" />
     </GridLayout>
 
     <GridLayout
+        android:id="@+id/a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/display"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/display_marginTop"
         android:rowCount="5"
         android:columnCount="4">
 
         <android.widget.Button
-            android:id="@+id/buttonAC"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_columnWeight="1"
-            android:text="@string/AC"
-            android:textSize="@dimen/text_size"
-            android:textColor="@color/text_color2"
-            android:background="@drawable/button_grey"
-            android:layout_margin="5dp"
-            android:stateListAnimator="@null" />
-        <android.widget.Button
-            android:id="@+id/buttonBack"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_columnWeight="1"
-            android:paddingStart="@dimen/back_start"
-            android:drawableStart="@drawable/back"
-            android:gravity="center_vertical|center_horizontal"
-            android:textSize="@dimen/text_size"
-            android:background="@drawable/button_grey"
-            android:layout_margin="5dp"
-            android:stateListAnimator="@null"
-            android:contentDescription="@string/back_description"
-            tools:ignore="RtlSymmetry" />
-        <android.widget.Button
-            android:id="@+id/buttonRoots"
+            android:id="@+id/buttonA"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
             android:layout_columnWeight="1"
@@ -85,6 +44,78 @@
             android:layout_margin="5dp"
             android:stateListAnimator="@null" />
         <android.widget.Button
+            android:id="@+id/buttonB"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/empty"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null" />
+        <android.widget.Button
+            android:id="@+id/buttonAC"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/AC"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null"
+            android:textStyle="bold" />
+        <android.widget.Button
+            android:id="@+id/buttonBack"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:drawableStart="@drawable/back_2"
+            android:textSize="@dimen/text_size"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null"
+            android:contentDescription="@string/back_description"
+            tools:ignore="RtlSymmetry" />
+
+        <android.widget.Button
+            android:id="@+id/buttonLeft_bracket"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/left_bracket"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null"
+            android:textStyle="bold"/>
+        <android.widget.Button
+            android:id="@+id/buttonRight_bracket"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/right_bracket"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null"
+            android:textStyle="bold"/>
+        <android.widget.Button
+            android:id="@+id/buttonPercent"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:text="@string/percent"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color2"
+            android:background="@drawable/button_grey"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null"
+            android:textStyle="bold"/>
+        <android.widget.Button
             android:id="@+id/buttonDiv"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
@@ -94,7 +125,8 @@
             android:textColor="@color/text_color2"
             android:background="@drawable/button_grey"
             android:layout_margin="5dp"
-            android:stateListAnimator="@null" />
+            android:stateListAnimator="@null"
+            android:textStyle="bold"/>
 
         <android.widget.Button
             android:id="@+id/buttonN7"
@@ -139,7 +171,8 @@
             android:textColor="@color/text_color2"
             android:background="@drawable/button_grey"
             android:layout_margin="5dp"
-            android:stateListAnimator="@null" />
+            android:stateListAnimator="@null"
+            android:textStyle="bold"/>
 
         <android.widget.Button
             android:id="@+id/buttonN4"
@@ -184,7 +217,8 @@
             android:textColor="@color/text_color2"
             android:background="@drawable/button_grey"
             android:layout_margin="5dp"
-            android:stateListAnimator="@null" />
+            android:stateListAnimator="@null"
+            android:textStyle="bold"/>
 
         <android.widget.Button
             android:id="@+id/buttonN1"
@@ -229,7 +263,8 @@
             android:textColor="@color/text_color2"
             android:background="@drawable/button_grey"
             android:layout_margin="5dp"
-            android:stateListAnimator="@null" />
+            android:stateListAnimator="@null"
+            android:textStyle="bold"/>
 
         <android.widget.Button
             android:id="@+id/buttonE"
@@ -277,7 +312,37 @@
             android:textColor="@color/white"
             android:background="@drawable/button_orange"
             android:layout_margin="5dp"
-            android:stateListAnimator="@null" />
-
+            android:stateListAnimator="@null"
+            android:textStyle="bold"/>
     </GridLayout>
+
+    <GridLayout
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/a"
+        android:layout_marginBottom="@dimen/display_marginTop"
+        android:columnCount="1">
+
+        <TextView
+            android:id="@+id/resultInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|bottom"
+            android:padding="@dimen/display_input_padding"
+            android:text="@string/n0"
+            android:textColor="@color/text_color1"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/resultAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|bottom"
+            android:padding="@dimen/display_answer_padding"
+            android:text="@string/n0"
+            android:textColor="@color/text_color3"
+            android:textSize="40sp" />
+    </GridLayout>
+
 </RelativeLayout>
