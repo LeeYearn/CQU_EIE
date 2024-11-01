@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="background">#FFF7F7F7</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="orange">#FFFF6900</color>
-    <color name="grey_transparent">#80F4F4F4</color>
+    <color name="button_equal">#FFFF6900</color>
+    <color name="button_color">#FFFFFFFF</color>
     <color name="grey">#FFC3C3C3</color>
     <color name="text_color1">#FF000000</color>
     <color name="text_color2">#FFFF6900</color>
