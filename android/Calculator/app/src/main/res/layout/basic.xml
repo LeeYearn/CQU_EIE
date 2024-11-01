@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
+    android:padding="20dp"
     android:background="@color/background">
 
     <GridLayout
@@ -317,33 +317,82 @@
             android:textStyle="bold"/>
     </GridLayout>
 
-    <GridLayout
-        android:id="@+id/display"
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/a"
         android:layout_marginBottom="@dimen/display_marginTop"
-        android:columnCount="1">
+        android:scrollbars="none">
 
-        <TextView
-            android:id="@+id/resultInput"
+        <GridLayout
+            android:id="@+id/display"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end|bottom"
-            android:padding="@dimen/display_input_padding"
-            android:text="@string/n0"
-            android:textColor="@color/text_color1"
-            android:textSize="60sp" />
+            android:columnCount="1">
 
-        <TextView
-            android:id="@+id/resultAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end|bottom"
-            android:padding="@dimen/display_answer_padding"
-            android:text="@string/n0"
-            android:textColor="@color/text_color3"
-            android:textSize="30sp" />
-    </GridLayout>
+            <TextView
+                android:id="@+id/resultHistory3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|bottom"
+                android:padding="@dimen/display_answer_padding"
+                android:text="@string/empty"
+                android:textColor="@color/text_color3"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/resultHistory2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|bottom"
+                android:padding="@dimen/display_answer_padding"
+                android:text="@string/empty"
+                android:textColor="@color/text_color3"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/resultHistory1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|bottom"
+                android:padding="@dimen/display_answer_padding"
+                android:text="@string/empty"
+                android:textColor="@color/text_color3"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/resultTextEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|bottom"
+                android:padding="@dimen/display_answer_padding"
+                android:text="@string/empty"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/land_text_padding"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <TextView
+                android:id="@+id/resultInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|bottom"
+                android:padding="@dimen/display_input_padding"
+                android:text="@string/n0"
+                android:textColor="@color/text_color1"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/resultAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|bottom"
+                android:padding="@dimen/display_answer_padding"
+                android:text="@string/n0"
+                android:textColor="@color/text_color3"
+                android:textSize="30sp" />
+        </GridLayout>
+    </ScrollView>
+
 
 </RelativeLayout>

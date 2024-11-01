@@ -2,11 +2,13 @@ package com.example.calculator;
 
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -20,20 +22,22 @@ import java.util.Stack;
 public class MainActivity extends AppCompatActivity {
     private TextView resultInput;
     private TextView resultAnswer;
+    private TextView resultHistory1;
+    private TextView resultHistory2;
+    private TextView resultHistory3;
     private Button buttonAC;
     private String currentInput = "";
     private double total = 0;
     private boolean pointFlag = true;
     private int bracketCount = 0;
     private boolean inputTextOverflow = false;
-    private boolean answerTextOverflow = false;
     private boolean overFlag = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.basic);
-
+        defaultView();
         final Button buttonBack = findViewById(R.id.buttonBack);
         buttonBack.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
@@ -46,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
         resultInput = findViewById(R.id.resultInput);
         resultAnswer = findViewById(R.id.resultAnswer);
+        resultHistory1 = findViewById(R.id.resultHistory1);
+        resultHistory2 = findViewById(R.id.resultHistory2);
+        resultHistory3 = findViewById(R.id.resultHistory3);
         buttonAC = findViewById(R.id.buttonAC);
 
         setupButtons();
@@ -91,15 +98,21 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(@NonNull View v) {
             if (v.getId() == R.id.buttonAC) {
+                if(!resultHistory1.getText().toString().isEmpty()&&resultAnswer.getText().toString().equals("0")){
+                    resultHistory1.setText("");
+                    resultHistory2.setText("");
+                    resultHistory3.setText("");
+                    buttonAC.setText("AC");
+                }
                 clear();
                 System.out.println("按下了AC");
                 encapsulation(0);
             }else if (v.getId() == R.id.buttonEqual) {
                 System.out.println("按下了= ");
                 if(!currentInput.isEmpty()){
+                    AC();
                     encapsulation(1);
                     currentInput = "";
-                    total = 0;
                 }
             } else if(v.getId() == R.id.buttonBack){
                 System.out.println("按下了Back");
@@ -123,9 +136,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             if(!currentInput.isEmpty())buttonAC.setText("C");
-            else buttonAC.setText("AC");
+//            else if(resultHistory1.getText().toString().isEmpty())
 
-            System.out.println(currentInput.length());
+//            System.out.println(currentInput.length());
+            System.out.println("resultAnswer.getText().toString()"+resultAnswer.getText().toString());
         }
     }
 
@@ -223,6 +237,7 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("没成功输入");
             return;
         }
+        defaultView();
         System.out.println("input"+input);
         switch (input) {
             case "+": case "-": case "×": case "÷":
@@ -293,6 +308,15 @@ public class MainActivity extends AppCompatActivity {
             number = number.substring(0, nonZeroIndex + 1);// 截取从字符串开始到这个非零数字后面的所有字符
         }
         return number;// 构建最终结果并返回
+    }
+
+    private void AC(){
+//        String history1 = resultHistory1.getText().toString();
+//        String history2 = resultHistory1.getText().toString();
+        resultHistory3.setText(resultHistory2.getText());
+        resultHistory2.setText(resultHistory1.getText());
+        String str = resultInput.getText().toString()+" "+resultAnswer.getText().toString();
+        resultHistory1.setText(str);
     }
 
     private void back( ){
@@ -368,6 +392,16 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean isNumber(@NonNull String input) {
         return input.charAt(0)<='9'&&input.charAt(0)>='0';
+    }
+
+    private void defaultView(){
+        ScrollView scrollView = findViewById(R.id.scrollView); // 假设你的 ScrollView id 是 scrollView
+        scrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
     }
 
     private void clear() {

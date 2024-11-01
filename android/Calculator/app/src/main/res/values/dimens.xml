@@ -10,4 +10,5 @@
     <dimen name="display_empty_padding">50dp</dimen>
     <dimen name="display_answer_padding">0dp</dimen>
     <dimen name="display_input_padding">0dp</dimen>
+    <dimen name="land_text_padding">50dp</dimen>
 </resources>
