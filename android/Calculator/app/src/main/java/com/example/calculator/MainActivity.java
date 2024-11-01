@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private double total = 0;
     private boolean pointFlag = true;
     private int bracketCount = 0;
-    private boolean isTextOverflow = false;
+    private boolean inputTextOverflow = false;
+    private boolean answerTextOverflow = false;
     private boolean overFlag = false;
 
     @Override
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupButtons() {
         int[] buttonIds = {
                 R.id.buttonAC,  R.id.buttonBack,
-                R.id.buttonLeft_bracket, R.id.buttonRight_bracket, /*R.id.buttonPercent,*/   R.id.buttonDiv,
+                R.id.buttonLeft_bracket, R.id.buttonRight_bracket, R.id.buttonPercent,   R.id.buttonDiv,
                 R.id.buttonN7,  R.id.buttonN8,      R.id.buttonN9,      R.id.buttonMulti,
                 R.id.buttonN4,  R.id.buttonN5,      R.id.buttonN6,      R.id.buttonSub,
                 R.id.buttonN1,  R.id.buttonN2,      R.id.buttonN3,      R.id.buttonAdd,
@@ -93,13 +94,11 @@ public class MainActivity extends AppCompatActivity {
                 clear();
                 System.out.println("按下了AC");
                 encapsulation(0);
-//                buttonAC.setText("AC");
             }else if (v.getId() == R.id.buttonEqual) {
                 System.out.println("按下了= ");
-//                calculate();
-                if(!currentInput.equals("0")){
+                if(!currentInput.isEmpty()){
                     encapsulation(1);
-                    currentInput = "0";
+                    currentInput = "";
                     total = 0;
                 }
             } else if(v.getId() == R.id.buttonBack){
@@ -107,41 +106,46 @@ public class MainActivity extends AppCompatActivity {
                 if(!currentInput.isEmpty()){
                     back();
                     checkTextSize();
-                    if(isNumber(String.valueOf(currentInput.charAt(currentInput.length() - 1))))calculate();
-
+                    if(!currentInput.isEmpty()&&isNumber(String.valueOf(currentInput.charAt(currentInput.length() - 1))))calculate();
+                }
+            }else if(v.getId() == R.id.buttonPercent){
+                    System.out.println("按下了%");
+                    if(!currentInput.isEmpty()){
+                        displayInput("%");
+                        calculate();
                 }
             }else {
+                if(currentInput.isEmpty() && v.getId() == R.id.buttonN0)return;
                 displayInput(((Button) v).getText().toString());
                 if(isNumber(v)){
-                    if(total == 0&&!isTextOverflow)encapsulation(0);
+                    if(total == 0&&!inputTextOverflow)encapsulation(0);
                     calculate();
                 }
             }
-            if(!currentInput.equals("0"))buttonAC.setText("C");
+            if(!currentInput.isEmpty())buttonAC.setText("C");
             else buttonAC.setText("AC");
+
             System.out.println(currentInput.length());
         }
     }
 
     private boolean isNumber(@NonNull View v){
-        return v.getId() == R.id.buttonN1 || v.getId() == R.id.buttonN2 || v.getId() == R.id.buttonN3 || v.getId() == R.id.buttonN4 || v.getId() == R.id.buttonN5 || v.getId() == R.id.buttonN6 || v.getId() == R.id.buttonN7 || v.getId() == R.id.buttonN8 || v.getId() == R.id.buttonN9 || v.getId() == R.id.buttonN0;
+        return v.getId()== R.id.buttonPercent || v.getId() == R.id.buttonN1 || v.getId() == R.id.buttonN2 || v.getId() == R.id.buttonN3 || v.getId() == R.id.buttonN4 || v.getId() == R.id.buttonN5 || v.getId() == R.id.buttonN6 || v.getId() == R.id.buttonN7 || v.getId() == R.id.buttonN8 || v.getId() == R.id.buttonN9 || v.getId() == R.id.buttonN0;
     }
 
+    @SuppressLint("SetTextI18n")
     private void calculate() {
         BigDecimal x = BigDecimal.ZERO; // 临时存储数字
         BigDecimal decimalFactor = BigDecimal.ONE; // 用于处理小数部分
         boolean flg = false; // 是否是数字
         boolean isDecimal = false; // 是否正在处理小数
+        char lastChar = '\0';// 记录上一个字符，以判断是否是数字
         Stack<BigDecimal> numStack = new Stack<>();
         Stack<Character> opStack = new Stack<>();
 
-        // 如果还有左括号，补充右括号并结束计算
-        String calculateInput = currentInput + ")".repeat(bracketCount);
-
+        String calculateInput = currentInput + ")".repeat(bracketCount);// 替换所有的%为×0.01并补充右括号
         System.out.println(calculateInput);
 
-        // 记录上一个字符，以判断是否为数字
-        char lastChar = '\0';
 
         try {
             for (char c : calculateInput.toCharArray()) {
@@ -157,6 +161,17 @@ public class MainActivity extends AppCompatActivity {
                     if (!isDecimal) {
                         isDecimal = true; // 开始处理小数部分
                     }
+                } else if (c == '%') {
+                    // 处理百分比，乘以0.01并更新currentInput
+                    if (flg) {
+                        x = x.multiply(BigDecimal.valueOf(0.01)); // 转换为小数
+                        String str = x.stripTrailingZeros().scale() <= 0 ? String.valueOf(x.toBigInteger()) : x.toString();
+                        // 更新currentInput
+                        String regex = "\\d+%$"; // 匹配以数字和%结尾的部分
+                        currentInput = currentInput.replaceAll(regex, str);
+                    }
+                    // 直接跳过%，不入栈
+                    continue;
                 } else {
                     if (flg) {
                         numStack.push(x);
@@ -164,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
                         decimalFactor = BigDecimal.ONE; // 重置小数因子
                         isDecimal = false; // 重置小数标志
                         flg = false;
-                    } // 数字入栈
+                    }
 
                     // 检查是否在数字后面遇到左括号
                     if (c == '(' && (lastChar >= '0' && lastChar <= '9')) {
@@ -188,18 +203,13 @@ public class MainActivity extends AppCompatActivity {
                         infixCalc(numStack, opStack);
                     opStack.push(c); // 运算符入栈
                 }
-
-                // 更新上一个字符
-                lastChar = c;
+                lastChar = c;// 更新上一个字符
             }
-
-            // 最后一个数字
-            if (flg) numStack.push(x);
-            // 最后一个运算符
-            while (!opStack.isEmpty()) infixCalc(numStack, opStack);
+            if (flg) numStack.push(x);// 最后一个数字
+            while (!opStack.isEmpty()) infixCalc(numStack, opStack);// 最后一个运算符
             BigDecimal total = numStack.pop();
             String str = total.stripTrailingZeros().scale() <= 0 ? String.valueOf(total.toBigInteger()) : total.toString();
-            resultAnswer.setText(str);
+            resultAnswer.setText("= "+ processNumber(str));
         } catch (Exception e) {
             clear();
             resultAnswer.setText("出错了");
@@ -207,39 +217,43 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     private void displayInput(String input) {
         if(currentInput.isEmpty() && isOperator(input) || overFlag){
             System.out.println("没成功输入");
             return;
         }
         System.out.println("input"+input);
-        if(isNumber(input)){
-            if(currentInput.equals("0"))currentInput = currentInput.substring(1);
-        }else if (isOperator(input)) {
-            pointFlag = true;
-            if(isOperator(String.valueOf(currentInput.charAt(currentInput.length() - 1)))) {
-                currentInput = currentInput.substring(0, currentInput.length() - 1);
-            }else if(String.valueOf(currentInput.charAt(currentInput.length() - 1)).equals(".")){
-                currentInput += "0";
-            }
-        }else if(input.equals(".")){
-            if(pointFlag){
-                pointFlag = false;
-                if(currentInput.isEmpty()){
-                    currentInput = "0";
-                }else if(String.valueOf(currentInput.charAt(currentInput.length() - 1)).equals(".")){
+        switch (input) {
+            case "+": case "-": case "×": case "÷":
+                pointFlag = true;
+                if(isOperator(String.valueOf(currentInput.charAt(currentInput.length() - 1)))) {
                     currentInput = currentInput.substring(0, currentInput.length() - 1);
-                }else if(isOperator(String.valueOf(currentInput.charAt(currentInput.length() - 1)))){
+                }else if(String.valueOf(currentInput.charAt(currentInput.length() - 1)).equals(".")){
                     currentInput += "0";
                 }
-            }else return;
-        }else if(input.equals("(")){
-            if(currentInput.equals("0"))currentInput = currentInput.substring(1);
-            bracketCount++;
-        }else if(input.equals(")")){
-            if(bracketCount == 0)return;
-            bracketCount--;
-        }else if(input.equals("e"))return;
+            case ".":
+                if (pointFlag) {
+                    pointFlag = false;
+                    if (currentInput.isEmpty()) {
+                        currentInput = "0";
+                    } else if (String.valueOf(currentInput.charAt(currentInput.length() - 1)).equals(".")) {
+                        currentInput = currentInput.substring(0, currentInput.length() - 1);
+                    } else if (isOperator(String.valueOf(currentInput.charAt(currentInput.length() - 1)))) {
+                        currentInput += "0";
+                    }
+                } else return;
+                break;
+            case "(":
+                bracketCount++;
+                break;
+            case ")":
+                if (bracketCount == 0) return;
+                bracketCount--;
+                break;
+            case "e":
+                return;
+        }
         currentInput += input;
         resultInput.setText(currentInput);
         checkTextSize();
@@ -258,16 +272,27 @@ public class MainActivity extends AppCompatActivity {
                 textWidth = resultInput.getPaint().measureText(currentInput); // 重新测量，加入宽字符
             }
             if(newSize <= minSize)overFlag = true;
-            isTextOverflow = true; // 设置标志为true
-        } else if (isTextOverflow) {// 如果宽度在范围内并且之前超出，逐步恢复到目标大小
+            inputTextOverflow = true; // 设置标志为true
+        } else if (inputTextOverflow) {// 如果宽度在范围内并且之前超出，逐步恢复到目标大小
             while (newSize < maxSize) {
                 newSize += 2; // 每次增加2sp
                 resultInput.setTextSize(newSize);
                 textWidth = resultInput.getPaint().measureText(currentInput); // 重新测量，加入宽字符
                 if (textWidth > width)break;// 如果超出，停止增加
             }
-            if (newSize >= maxSize) isTextOverflow = false;// 如果成功恢复到正常范围，则重置标志
+            if (newSize >= maxSize) inputTextOverflow = false;// 如果成功恢复到正常范围，则重置标志
         }
+    }
+
+    public static String processNumber(String number) {
+        if (number == null || number.indexOf('.') == -1) return number; // 如果没有小数点，直接返回原字符串
+        int decimalIndex = number.indexOf('.'); // 找到小数点的位置
+        if (decimalIndex != -1) {// 从字符串末尾开始，找到小数点后的第一个非零数字
+            int nonZeroIndex = number.length() - 1;
+            while (nonZeroIndex > decimalIndex && number.charAt(nonZeroIndex) == '0') nonZeroIndex--;
+            number = number.substring(0, nonZeroIndex + 1);// 截取从字符串开始到这个非零数字后面的所有字符
+        }
+        return number;// 构建最终结果并返回
     }
 
     private void back( ){
@@ -301,7 +326,7 @@ public class MainActivity extends AppCompatActivity {
                 if (b.compareTo(BigDecimal.ZERO) == 0) {
                     throw new ArithmeticException("除以零");
                 }
-                numStack.push(a.divide(b, RoundingMode.HALF_UP)); // 使用四舍五入处理除法
+                numStack.push(a.divide(b, 18,RoundingMode.HALF_UP)); // 使用四舍五入处理除法
                 break;
             case '^':
                 numStack.push(a.pow(b.intValue())); // 取幂
@@ -349,8 +374,8 @@ public class MainActivity extends AppCompatActivity {
         pointFlag=true;
         overFlag = false;
         bracketCount=0;
-        isTextOverflow = false;
-        currentInput = "0";
+        inputTextOverflow = false;
+        currentInput = "";
         total = 0;
         resultInput.setText("0");
         resultAnswer.setText("0");
