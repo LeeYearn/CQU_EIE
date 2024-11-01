@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
     private boolean pointFlag = true;
     private int bracketCount = 0;
     private boolean isTextOverflow = false;
+    private boolean overFlag = false;
+    private Stack<Double> num = new Stack<>();     // 操作数
+    private Stack<Character> sig = new Stack<>();   // 操作符
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,38 +85,89 @@ public class MainActivity extends AppCompatActivity {
 
     private class ButtonClickListener implements View.OnClickListener {
         @Override
-        public void onClick(View v) {
+        public void onClick(@NonNull View v) {
             if (v.getId() == R.id.buttonAC) {
                 clear();
                 System.out.println("按下了AC");
                 encapsulation(0);
             }else if (v.getId() == R.id.buttonEqual) {
-                System.out.println("按下了=");
+                System.out.println("按下了= ");
+                calculate();
                 currentInput = "";
                 total = 0;
                 encapsulation(1);
             } else if(v.getId() == R.id.buttonBack){
                 System.out.println("按下了Back");
                 if(!currentInput.isEmpty()) back();
+                overFlag=false;
                 checkTextSize();
                 //calculate();
                 v.getId();
             }else {
                 displayInput(((Button) v).getText().toString());
-                if(isInit(v)){
+                if(isNumber(v)){
                     if(total == 0&&!isTextOverflow)encapsulation(0);
+
                 }
-                //calculate();
+
             }
         }
     }
 
-    private boolean isInit(@NonNull View v){
-        return v.getId() == R.id.buttonLeft_bracket||v.getId() == R.id.buttonRight_bracket || v.getId() == R.id.buttonN1 || v.getId() == R.id.buttonN2 || v.getId() == R.id.buttonN3 || v.getId() == R.id.buttonN4 || v.getId() == R.id.buttonN5 || v.getId() == R.id.buttonN6 || v.getId() == R.id.buttonN7 || v.getId() == R.id.buttonN8 || v.getId() == R.id.buttonN9 || v.getId() == R.id.buttonN0;
+    private boolean isNumber(@NonNull View v){
+        return v.getId() == R.id.buttonN1 || v.getId() == R.id.buttonN2 || v.getId() == R.id.buttonN3 || v.getId() == R.id.buttonN4 || v.getId() == R.id.buttonN5 || v.getId() == R.id.buttonN6 || v.getId() == R.id.buttonN7 || v.getId() == R.id.buttonN8 || v.getId() == R.id.buttonN9 || v.getId() == R.id.buttonN0;
     }
 
+    private void calculate() {
+        double x = 0;    // 临时存储数字
+        boolean flg = false; // 是否是数字
+        String calculateInput = currentInput;
+        // 如果还有左括号，补充右括号并结束计算
+        calculateInput += ")".repeat(bracketCount);
+
+        resultAnswer.setText(calculateInput);
+        for (char c : calculateInput.toCharArray()) {
+            if (Character.isDigit(c)) {
+                x = x * 10 + (c - '0');
+                flg = true;
+            } else {
+                if (flg) {
+                    num.push(x);
+                    x = 0;
+                    flg = false;
+                } // 数字入栈
+
+                if (c == '(') {
+                    sig.push(c);
+                    continue; // 左括号入栈
+                }
+
+                if (c == ')') {
+                    while (!sig.isEmpty() && sig.peek() != '(')
+                        infixCalc(num, sig);
+                    sig.pop(); // 移除左括号
+                    continue;
+                } // 右括号, 一直计算到左括号
+
+                // 此时 c 是运算符, 且有运算级更低的, 形如 (a*b+)
+                while (!sig.isEmpty() && infixLevel(sig.peek()) >= infixLevel(c))
+                    infixCalc(num, sig);
+                sig.push(c); // 运算符入栈
+            }
+        }
+
+        // 最后一个数字
+        if (flg) num.push(x);
+        // 最后一个运算符
+        while (!sig.isEmpty()) infixCalc(num, sig);
+
+        total = num.pop();
+        resultAnswer.setText(String.valueOf(total));
+    }
+
+
     private void displayInput(String input) {
-        if(currentInput.isEmpty() && isOperator(input)){
+        if(currentInput.isEmpty() && isOperator(input) || overFlag){
             System.out.println("没成功输入");
             return;
         }
@@ -142,53 +196,39 @@ public class MainActivity extends AppCompatActivity {
             if(bracketCount == 0)return;
             bracketCount--;
         }else if(input.equals("e"))return;
-        System.out.println("bracketCount"+bracketCount);
         currentInput += input;
         resultInput.setText(currentInput);
         checkTextSize();
-
-
     }
 
     private void checkTextSize() {
-        // 获取当前视图宽度
-        int width = resultInput.getMeasuredWidth();
-        // 获取当前文本宽度，加上一个字符作为预判
-        float textWidth = resultInput.getPaint().measureText(currentInput + "8");
-        float targetSize = 80.0f; // 默认目标大小
+        int width = resultInput.getMeasuredWidth()-60;// 获取当前视图宽度
+        float textWidth = resultInput.getPaint().measureText(currentInput + "8");// 获取当前文本宽度，加上一个字符作为预判
+        float maxSize = 80.0f; // 默认目标大小
         float minSize = 40.0f; // 最小大小
-
-        if (textWidth > width) {
-            // 如果文本超出宽度，逐步减小字体大小
-            float newSize = resultInput.getTextSize() / getResources().getDisplayMetrics().scaledDensity; // 当前大小
-
-            while (textWidth > width && newSize > minSize) {
+        float newSize = resultInput.getTextSize() / getResources().getDisplayMetrics().scaledDensity; // 当前大小
+        if (textWidth > width) {// 如果文本超出宽度，逐步减小字体大小
+            while (textWidth > width) {
                 newSize -= 2; // 每次减少2sp
                 resultInput.setTextSize(newSize);
-                textWidth = resultInput.getPaint().measureText(currentInput + "0"); // 重新测量，加入宽字符
+                textWidth = resultInput.getPaint().measureText(currentInput + "8"); // 重新测量，加入宽字符
             }
+            if(newSize <= minSize)overFlag = true;
             isTextOverflow = true; // 设置标志为true
-        } else if (isTextOverflow) {
-            // 如果宽度在范围内并且之前超出，逐步恢复到目标大小
-            float currentSize = resultInput.getTextSize() / getResources().getDisplayMetrics().scaledDensity; // 获取当前字体大小
-            while (currentSize < targetSize) {
-                currentSize += 2; // 每次增加2sp
-                resultInput.setTextSize(currentSize);
-                textWidth = resultInput.getPaint().measureText(currentInput+"00"); // 重新测量，加入宽字符
-                // 检查是否超出宽度
-                if (textWidth > width) {
-                    break; // 如果超出，停止增加
-                }
+        } else if (isTextOverflow) {// 如果宽度在范围内并且之前超出，逐步恢复到目标大小
+            while (newSize < maxSize) {
+                newSize += 2; // 每次增加2sp
+                resultInput.setTextSize(newSize);
+                textWidth = resultInput.getPaint().measureText(currentInput+"8"); // 重新测量，加入宽字符
+                if (textWidth > width)break;// 如果超出，停止增加
             }
-            // 如果成功恢复到正常范围，则重置标志
-            if (currentSize >= targetSize) {
-                isTextOverflow = false; // 设置标志为false
-            }
+            if (newSize >= maxSize) isTextOverflow = false;// 如果成功恢复到正常范围，则重置标志
         }
     }
 
-
     private void back( ){
+        if(String.valueOf(currentInput.charAt(currentInput.length() - 1)).equals("("))bracketCount--;
+        else if(String.valueOf(currentInput.charAt(currentInput.length() - 1)).equals(")"))bracketCount++;
         currentInput = currentInput.substring(0, currentInput.length() - 1);
         if(currentInput.isEmpty()){
             clear();
@@ -196,6 +236,39 @@ public class MainActivity extends AppCompatActivity {
         }
         resultInput.setText(currentInput);
     }
+
+    private void infixCalc(@NonNull Stack<Double> numStack, @NonNull Stack<Character> opStack) {
+        double b = numStack.pop();
+        double a = numStack.pop();
+        char op = opStack.pop();
+
+        switch (op) {
+            case '+':
+                numStack.push(a + b);
+                break;
+            case '-':
+                numStack.push(a - b);
+                break;
+            case '×': // 注意修改为你的乘法符号
+                numStack.push(a * b);
+                break;
+            case '÷': // 注意修改为你的除法符号
+                numStack.push(a / b);
+                break;
+            case '^':
+                numStack.push(Math.pow(a, b));
+                break;
+        }
+    }
+
+
+    private int infixLevel(char a) {
+        if (a == '^') return 3;
+        if (a == '*' || a == '/') return 2;
+        if (a == '+' || a == '-') return 1;
+        return 0; // 括号
+    }
+
 
     private void encapsulation(int flag){
         if(flag == 1){
@@ -221,6 +294,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void clear() {
+        overFlag = false;
         isTextOverflow = false;
         currentInput = "";
         total = 0;
