@@ -37,9 +37,9 @@
 
 - 前情学习 1： [基本项目结构梳理](#基本项目结构梳理)
 
-- 前请学习 2： [页面跳转](./PageSwitching/)
+- 前请学习 2： [页面跳转](./android/PageSwitching/)
 
-- 课程任务 1： [计算器](./Calculator/)
+- 课程任务 1： [计算器](./android/Calculator/)
 
 
 <h2 id="基本项目结构梳理">基本项目结构梳理</h2>
