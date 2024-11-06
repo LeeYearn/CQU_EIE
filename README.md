@@ -13,9 +13,9 @@
 
 - 选修 1: [智能网联汽车数据工程](./dataEngineer/)
 
-- 选修 2: [智能座舱与人机交互](./android/)
+- 选修 2: [智能座舱与人机交互](./android/), <a href="#android">文档</a>
 
-- 毕业论文: 智能网联汽车相关课题
+- 毕业论文: [暂无](www.leeyearn.com)
 
 <br>
 <br>
@@ -26,12 +26,12 @@
 
 
 
-<div align= "center">
-  <a href="https://developer.huawei.com/consumer/cn/develop/">
+<div align= "center" id="android">
+  <a href="https://developer.huawei.com/consumer/cn/develop/" >
     <img src="./.vscode/AndroidLogo.webp">
   </a>
   <h1>
-    智能座舱与人机交互 Android 开发
+    智能座舱与人机交互 - Android 开发
   </h1>
 </div>
 
@@ -44,12 +44,31 @@
 
 <h2 id="基本项目结构梳理">基本项目结构梳理</h2>
 
-### 1. 模板创建类型
+### 1. 软件版本
+
+- `Android studio` 
+  - Android Studio Koala Feature Drop | 2024.1.2
+  - Build #AI-241.18034.62.2412.12266719, built on August 23, 2024
+  - Runtime version: 17.0.11+0-17.0.11b1207.24-11852314 amd64
+  - VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
+  - Linux 6.8.0-48-generic
+  - GC: G1 Young Generation, G1 Old Generation
+  - Memory: 2048M
+  - Cores: 20
+  - Registry:
+    - ide.experimental.ui=true
+  - Non-Bundled Plugins:
+      - com.intellij.zh (241.190)
+      - com.github.copilot (1.5.28.7313)
+  - Current Desktop: ubuntu:GNOME
+
+### 2. 创建基本项目
+
 - 一般选择 `Empty Views Activity`
-  ![创建模板类型.png](./README/img/创建模板类型.png)
+  ![创建模板类型.png](./.vscode/创建模板类型.png)
 
 - 进入具体设置后
-  ![创建项目设置.png](./README/img/创建模板设置.png)
+  ![创建项目设置.png](./.vscode/创建模板设置.png)
 
   - `Name` 项目名称
   - `Package name` 默认即可
@@ -59,9 +78,9 @@
   - `Build configuration language` 构建配置语言
 
 
-### 2. 项目结构
+### 3. 项目结构
 | Root Directory    | 作用
-|:-----------------:|:--------------------------------------------------|
+|:------------------|:--------------------------------------------------|
 | .gradle           | android studio自动生成的目录，一般情况不做修改
 | .idea             | android studio自动生成的目录，一般情况不做修改
 | app               | [module模块](#app)
@@ -74,8 +93,8 @@
 | setting.gradle    | gradle 项目的子项目包含文件
 
 #### app
-| app Directory    | 作用
-|:-----------------:|:--------------------------------------------------|
+| app Directory     | 作用
+|:------------------|:--------------------------------------------------|
 | aa| aa
 | aa| aa
 | aa| aa
