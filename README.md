@@ -13,7 +13,7 @@
 
 - 选修 1: [智能网联汽车数据工程](./dataEngineer/)
 
-- 选修 2: [智能座舱与人机交互](./android/), <a href="#android">文档</a>
+- 选修 2: [智能座舱与人机交互](./android/) <a href="#android">文档</a>
 
 - 毕业论文: [暂无](www.leeyearn.com)
 
