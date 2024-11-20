@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1683.4310344827586,
+                    1738.8275862068967
+                ],
+                [
+                    2035.1551724137935,
+                    2818.137931034483
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\7dw6Dlinurs.jpg",
+    "imageData": null,
+    "imageHeight": 4388,
+    "imageWidth": 3291
+}

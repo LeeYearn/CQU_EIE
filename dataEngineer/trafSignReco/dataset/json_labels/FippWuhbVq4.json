@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1756.4210526315792,
+                    1301.157894736842
+                ],
+                [
+                    1543.263157894737,
+                    2369.5789473684213
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\FippWuhbVq4.jpg",
+    "imageData": null,
+    "imageHeight": 3376,
+    "imageWidth": 3376
+}

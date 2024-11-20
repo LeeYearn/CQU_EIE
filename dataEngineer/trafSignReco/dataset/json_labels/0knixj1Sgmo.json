@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "yellow light",
+            "points": [
+                [
+                    3913.875,
+                    534.2500000000001
+                ],
+                [
+                    3142.0,
+                    2543.625
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\0knixj1Sgmo.jpg",
+    "imageData": null,
+    "imageHeight": 3456,
+    "imageWidth": 5184
+}

@@ -1,0 +1,112 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1398.1012658227849,
+                    4162.025316455696
+                ],
+                [
+                    1450.632911392405,
+                    4263.291139240506
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1633.5443037974683,
+                    3924.683544303797
+                ],
+                [
+                    1682.9113924050632,
+                    4026.5822784810125
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1737.9746835443036,
+                    3899.3670886075947
+                ],
+                [
+                    1691.139240506329,
+                    4027.2151898734173
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1889.240506329114,
+                    4245.569620253164
+                ],
+                [
+                    1855.6962025316454,
+                    4315.189873417721
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2414.5569620253164,
+                    4084.8101265822784
+                ],
+                [
+                    2455.0632911392404,
+                    4160.126582278481
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2486.7088607594937,
+                    4085.443037974683
+                ],
+                [
+                    2451.26582278481,
+                    4155.06329113924
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\_aW7G8CwiMI.jpg",
+    "imageData": null,
+    "imageHeight": 6906,
+    "imageWidth": 4604
+}

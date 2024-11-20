@@ -1,0 +1,52 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    3075.257731958763,
+                    2786.59793814433
+                ],
+                [
+                    3076.2886597938145,
+                    3036.082474226804
+                ],
+                [
+                    2978.3505154639174,
+                    3041.237113402062
+                ],
+                [
+                    2982.4742268041236,
+                    2789.6907216494847
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        },
+        {
+            "label": "parking",
+            "points": [
+                [
+                    3723.6263736263736,
+                    3101.6483516483518
+                ],
+                [
+                    3813.7362637362635,
+                    3207.142857142857
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\ESbNoM9ohaE.jpg",
+    "imageData": null,
+    "imageHeight": 5000,
+    "imageWidth": 4000
+}

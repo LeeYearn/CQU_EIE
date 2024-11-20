@@ -1,0 +1,61 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    2769.3571428571427,
+                    1555.9183673469386
+                ],
+                [
+                    2826.5,
+                    1678.3673469387754
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "green light",
+            "points": [
+                [
+                    3431.3068669527897,
+                    1936.480686695279
+                ],
+                [
+                    3397.8304721030045,
+                    2043.3476394849786
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "parking",
+            "points": [
+                [
+                    2846.757510729614,
+                    2019.7424892703862
+                ],
+                [
+                    2879.8047210300433,
+                    2053.6480686695277
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\7TSnrTE5dQc.jpg",
+    "imageData": null,
+    "imageHeight": 3089,
+    "imageWidth": 4633
+}

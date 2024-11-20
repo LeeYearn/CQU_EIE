@@ -247,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
                 }else if(String.valueOf(currentInput.charAt(currentInput.length() - 1)).equals(".")){
                     currentInput += "0";
                 }
+                break;
             case ".":
                 if (pointFlag) {
                     pointFlag = false;

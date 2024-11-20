@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    1241.6891891891894,
+                    1065.837837837838
+                ],
+                [
+                    1109.2567567567569,
+                    1449.6216216216217
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\Gmp35k0-mwg.jpg",
+    "imageData": null,
+    "imageHeight": 3456,
+    "imageWidth": 2305
+}

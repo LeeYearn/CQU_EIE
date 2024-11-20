@@ -1,0 +1,44 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    2292.4102564102564,
+                    2224.0
+                ],
+                [
+                    2420.6153846153848,
+                    2493.230769230769
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "green light",
+            "points": [
+                [
+                    3248.8205128205127,
+                    2211.1794871794873
+                ],
+                [
+                    3148.820512820513,
+                    2477.846153846154
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\bL_K801gcKI.jpg",
+    "imageData": null,
+    "imageHeight": 2848,
+    "imageWidth": 4272
+}

@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2065.1363636363635,
+                    2331.545454545455
+                ],
+                [
+                    1524.227272727273,
+                    3604.272727272728
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\HtONnp-3LlE.jpg",
+    "imageData": null,
+    "imageHeight": 5854,
+    "imageWidth": 3903
+}

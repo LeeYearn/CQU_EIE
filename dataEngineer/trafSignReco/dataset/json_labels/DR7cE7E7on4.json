@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    300.0,
+                    1968.75
+                ],
+                [
+                    540.625,
+                    2496.875
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\DR7cE7E7on4.jpg",
+    "imageData": null,
+    "imageHeight": 4000,
+    "imageWidth": 3000
+}

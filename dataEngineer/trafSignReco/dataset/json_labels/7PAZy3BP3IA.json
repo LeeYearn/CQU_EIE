@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    287.5,
+                    1468.5000000000002
+                ],
+                [
+                    1792.5,
+                    1978.5000000000002
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\7PAZy3BP3IA.jpg",
+    "imageData": null,
+    "imageHeight": 3232,
+    "imageWidth": 2160
+}

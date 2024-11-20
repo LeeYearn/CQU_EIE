@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2511.809523809524,
+                    2223.809523809524
+                ],
+                [
+                    2559.4285714285716,
+                    3895.2380952380954
+                ],
+                [
+                    2068.9523809523807,
+                    3876.1904761904766
+                ],
+                [
+                    2035.6190476190477,
+                    2242.857142857143
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\DbX18-_camI.jpg",
+    "imageData": null,
+    "imageHeight": 6000,
+    "imageWidth": 3376
+}

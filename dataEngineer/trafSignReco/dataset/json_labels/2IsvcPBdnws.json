@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    552.3809523809523,
+                    1957.1428571428573
+                ],
+                [
+                    914.2857142857142,
+                    3004.761904761905
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\2IsvcPBdnws.jpg",
+    "imageData": null,
+    "imageHeight": 6000,
+    "imageWidth": 4000
+}

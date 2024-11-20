@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    1350.5925925925924,
+                    478.0555555555557
+                ],
+                [
+                    1154.2962962962963,
+                    1903.9814814814815
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\7rc_SNHUTkU.jpg",
+    "imageData": null,
+    "imageHeight": 4645,
+    "imageWidth": 3716
+}

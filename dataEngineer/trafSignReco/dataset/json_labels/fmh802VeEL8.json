@@ -1,0 +1,52 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    4024.2105263157896,
+                    3796.8421052631575
+                ],
+                [
+                    0.0,
+                    3691.908323612159
+                ],
+                [
+                    0.0,
+                    3917.894736842105
+                ],
+                [
+                    4413.684210526315,
+                    3959.9999999999995
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1776.842105263158,
+                    812.6315789473683
+                ],
+                [
+                    1640.0,
+                    1275.7894736842104
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\fmh802VeEL8.jpg",
+    "imageData": null,
+    "imageHeight": 6720,
+    "imageWidth": 4480
+}

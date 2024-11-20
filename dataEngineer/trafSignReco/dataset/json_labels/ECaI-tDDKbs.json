@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    4102.095238095238,
+                    500.57142857142856
+                ],
+                [
+                    4140.190476190476,
+                    1014.857142857143
+                ],
+                [
+                    3992.5714285714284,
+                    1091.0476190476193
+                ],
+                [
+                    3944.9523809523807,
+                    600.5714285714286
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\ECaI-tDDKbs.jpg",
+    "imageData": null,
+    "imageHeight": 4344,
+    "imageWidth": 7728
+}

@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2011.0,
+                    1842.5
+                ],
+                [
+                    1952.25,
+                    1975.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\fpXNIRackwo.jpg",
+    "imageData": null,
+    "imageHeight": 2989,
+    "imageWidth": 2672
+}

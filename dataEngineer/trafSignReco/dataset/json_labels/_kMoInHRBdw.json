@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2340.4761904761904,
+                    1345.2380952380954
+                ],
+                [
+                    1838.095238095238,
+                    2611.904761904762
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\_kMoInHRBdw.jpg",
+    "imageData": null,
+    "imageHeight": 3000,
+    "imageWidth": 4000
+}

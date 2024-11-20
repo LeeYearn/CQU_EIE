@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1370.4545454545455,
+                    1369.3181818181818
+                ],
+                [
+                    1925.0,
+                    1360.2272727272727
+                ],
+                [
+                    1975.0,
+                    3255.681818181818
+                ],
+                [
+                    1425.0,
+                    3260.2272727272725
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\99FACIp6-TU.jpg",
+    "imageData": null,
+    "imageHeight": 5775,
+    "imageWidth": 3850
+}

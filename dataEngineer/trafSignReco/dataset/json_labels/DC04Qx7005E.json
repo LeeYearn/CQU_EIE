@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    2211.782608695652,
+                    2241.586956521739
+                ],
+                [
+                    2229.173913043478,
+                    3602.4565217391305
+                ],
+                [
+                    1781.3478260869567,
+                    3624.195652173913
+                ],
+                [
+                    1781.3478260869567,
+                    2280.717391304348
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\DC04Qx7005E.jpg",
+    "imageData": null,
+    "imageHeight": 5631,
+    "imageWidth": 3754
+}

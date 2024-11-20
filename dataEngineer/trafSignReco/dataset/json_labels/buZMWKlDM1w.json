@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "yellow light",
+            "points": [
+                [
+                    1664.7450980392157,
+                    1523.0882352941176
+                ],
+                [
+                    1747.0980392156864,
+                    1756.421568627451
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\buZMWKlDM1w.jpg",
+    "imageData": null,
+    "imageHeight": 2505,
+    "imageWidth": 2004
+}

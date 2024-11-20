@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "yellow light",
+            "points": [
+                [
+                    1785.7142857142858,
+                    1585.7142857142858
+                ],
+                [
+                    3057.1428571428573,
+                    5457.142857142857
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\A9MXTPNsrhk.jpg",
+    "imageData": null,
+    "imageHeight": 6000,
+    "imageWidth": 4000
+}

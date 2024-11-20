@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "parking",
+            "points": [
+                [
+                    504.5454545454545,
+                    3982.3636363636365
+                ],
+                [
+                    627.2727272727275,
+                    4155.090909090909
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\i3QNUIc7TA4.jpg",
+    "imageData": null,
+    "imageHeight": 5692,
+    "imageWidth": 3800
+}

@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    915.9574468085107,
+                    267.3936170212767
+                ],
+                [
+                    686.1702127659573,
+                    839.7340425531916
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\g_R-JWDghSI.jpg",
+    "imageData": null,
+    "imageHeight": 2705,
+    "imageWidth": 3500
+}

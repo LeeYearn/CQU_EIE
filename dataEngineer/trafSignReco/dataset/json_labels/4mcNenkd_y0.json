@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1780.0,
+                    1500.0
+                ],
+                [
+                    1240.0,
+                    1564.0
+                ],
+                [
+                    1288.0,
+                    2880.0
+                ],
+                [
+                    1792.0,
+                    2804.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\4mcNenkd_y0.jpg",
+    "imageData": null,
+    "imageHeight": 5040,
+    "imageWidth": 3360
+}

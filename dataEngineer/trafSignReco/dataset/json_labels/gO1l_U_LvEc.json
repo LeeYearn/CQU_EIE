@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    1214.2857142857142,
+                    804.7619047619048
+                ],
+                [
+                    1138.095238095238,
+                    4223.809523809524
+                ],
+                [
+                    2242.8571428571427,
+                    4342.857142857143
+                ],
+                [
+                    2276.1904761904766,
+                    1004.7619047619047
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\gO1l_U_LvEc.jpg",
+    "imageData": null,
+    "imageHeight": 6000,
+    "imageWidth": 4000
+}

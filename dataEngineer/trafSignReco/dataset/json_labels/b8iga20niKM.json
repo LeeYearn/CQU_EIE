@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    1905.0,
+                    1835.0
+                ],
+                [
+                    2230.0,
+                    2905.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\b8iga20niKM.jpg",
+    "imageData": null,
+    "imageHeight": 6240,
+    "imageWidth": 4160
+}

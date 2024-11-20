@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    1783.8750000000002,
+                    1466.0
+                ],
+                [
+                    1780.7500000000002,
+                    3544.125
+                ],
+                [
+                    1187.0000000000002,
+                    3394.125
+                ],
+                [
+                    1215.1250000000002,
+                    1441.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\cL50oI6nwCs.jpg",
+    "imageData": null,
+    "imageHeight": 4032,
+    "imageWidth": 3024
+}

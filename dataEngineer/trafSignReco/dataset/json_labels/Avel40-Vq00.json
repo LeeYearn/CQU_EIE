@@ -1,0 +1,81 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    2480.0,
+                    4628.0
+                ],
+                [
+                    0.0,
+                    4764.932515337423
+                ],
+                [
+                    0.0,
+                    4999.0
+                ],
+                [
+                    3988.0,
+                    4736.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        },
+        {
+            "label": "green light",
+            "points": [
+                [
+                    1960.0,
+                    2524.0
+                ],
+                [
+                    2128.0,
+                    2932.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "green light",
+            "points": [
+                [
+                    2828.0,
+                    1264.0
+                ],
+                [
+                    2744.0,
+                    1744.0
+                ],
+                [
+                    2884.0,
+                    1764.0
+                ],
+                [
+                    2968.0,
+                    1736.0
+                ],
+                [
+                    3032.0,
+                    1332.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\Avel40-Vq00.jpg",
+    "imageData": null,
+    "imageHeight": 5000,
+    "imageWidth": 4000
+}

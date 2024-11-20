@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2720.4615384615386,
+                    1564.0
+                ],
+                [
+                    2978.153846153846,
+                    2121.6923076923076
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\eSHLV9owd_U.jpg",
+    "imageData": null,
+    "imageHeight": 4928,
+    "imageWidth": 3264
+}

@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1933.0454545454545,
+                    830.1212121212122
+                ],
+                [
+                    1775.469696969697,
+                    1211.939393939394
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\HCDmcskE_Zk.jpg",
+    "imageData": null,
+    "imageHeight": 3836,
+    "imageWidth": 2557
+}

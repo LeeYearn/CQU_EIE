@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    386.7692307692307,
+                    1668.6153846153848
+                ],
+                [
+                    621.3846153846152,
+                    2376.3076923076924
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\HX73apcFYts.jpg",
+    "imageData": null,
+    "imageHeight": 4968,
+    "imageWidth": 3312
+}

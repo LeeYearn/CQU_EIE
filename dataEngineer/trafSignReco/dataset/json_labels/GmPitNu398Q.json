@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    1310.1739130434783,
+                    704.391304347826
+                ],
+                [
+                    1331.9130434782608,
+                    2060.913043478261
+                ],
+                [
+                    988.4347826086957,
+                    1817.4347826086955
+                ],
+                [
+                    966.6956521739132,
+                    887.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\GmPitNu398Q.jpg",
+    "imageData": null,
+    "imageHeight": 5574,
+    "imageWidth": 3716
+}

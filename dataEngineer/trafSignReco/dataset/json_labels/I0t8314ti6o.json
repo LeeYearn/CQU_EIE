@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2090.7826086956525,
+                    1069.2173913043478
+                ],
+                [
+                    1834.2608695652173,
+                    1786.6086956521738
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\I0t8314ti6o.jpg",
+    "imageData": null,
+    "imageHeight": 2408,
+    "imageWidth": 3612
+}

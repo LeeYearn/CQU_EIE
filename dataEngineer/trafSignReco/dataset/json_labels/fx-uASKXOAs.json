@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2779.7058823529414,
+                    2410.735294117647
+                ],
+                [
+                    2956.176470588235,
+                    4757.7941176470595
+                ],
+                [
+                    2256.176470588235,
+                    4798.970588235295
+                ],
+                [
+                    2138.5294117647054,
+                    2540.1470588235293
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\fx-uASKXOAs.jpg",
+    "imageData": null,
+    "imageHeight": 7245,
+    "imageWidth": 4830
+}

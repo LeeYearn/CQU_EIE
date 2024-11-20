@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1425.0000000000002,
+                    553.5714285714284
+                ],
+                [
+                    1583.9285714285716,
+                    1017.8571428571428
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\afwi-D9xmt4.jpg",
+    "imageData": null,
+    "imageHeight": 2000,
+    "imageWidth": 3000
+}

@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    3953.5,
+                    1942.9473684210527
+                ],
+                [
+                    4848.236842105262,
+                    4269.263157894737
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\01RYHGN-Zi0.jpg",
+    "imageData": null,
+    "imageHeight": 5928,
+    "imageWidth": 8907
+}

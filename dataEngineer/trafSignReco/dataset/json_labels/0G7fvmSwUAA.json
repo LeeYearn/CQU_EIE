@@ -1,0 +1,39 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    2612.666666666667,
+                    2846.6666666666665
+                ],
+                [
+                    542.6666666666667,
+                    2973.3333333333335
+                ],
+                [
+                    1375.5989717223647,
+                    4239.0
+                ],
+                [
+                    2831.0,
+                    4239.0
+                ],
+                [
+                    2831.0,
+                    2826.6666666666665
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\0G7fvmSwUAA.jpg",
+    "imageData": null,
+    "imageHeight": 4240,
+    "imageWidth": 2832
+}

@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    3557.1428571428573,
+                    1646.428571428571
+                ],
+                [
+                    3650.0000000000005,
+                    2900.0
+                ],
+                [
+                    4164.285714285714,
+                    2860.714285714286
+                ],
+                [
+                    4039.2857142857147,
+                    1653.5714285714284
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\dO8OGz3IayQ.jpg",
+    "imageData": null,
+    "imageHeight": 4000,
+    "imageWidth": 6000
+}

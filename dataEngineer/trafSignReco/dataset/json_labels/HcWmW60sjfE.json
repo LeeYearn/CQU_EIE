@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2520.3703703703695,
+                    2185.259259259259
+                ],
+                [
+                    2138.8888888888887,
+                    3326.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\HcWmW60sjfE.jpg",
+    "imageData": null,
+    "imageHeight": 4652,
+    "imageWidth": 3100
+}

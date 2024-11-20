@@ -1,0 +1,86 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    3116.9230769230767,
+                    1102.846153846154
+                ],
+                [
+                    3272.3076923076924,
+                    1541.3076923076924
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2075.3846153846152,
+                    838.2307692307694
+                ],
+                [
+                    2315.3846153846152,
+                    1375.1538461538462
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    32.30769230769231,
+                    562.846153846154
+                ],
+                [
+                    256.9230769230769,
+                    1204.3846153846155
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    4154.0,
+                    3923.0
+                ],
+                [
+                    1058.0,
+                    3799.0
+                ],
+                [
+                    0.0,
+                    3989.9172932330825
+                ],
+                [
+                    4159.0,
+                    4317.011781670695
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\1W1IObBJKbg.jpg",
+    "imageData": null,
+    "imageHeight": 5658,
+    "imageWidth": 4160
+}

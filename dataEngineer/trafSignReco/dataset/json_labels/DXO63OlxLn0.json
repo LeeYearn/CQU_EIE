@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    518.3846153846152,
+                    500.6538461538464
+                ],
+                [
+                    841.4615384615386,
+                    1312.1923076923078
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\DXO63OlxLn0.jpg",
+    "imageData": null,
+    "imageHeight": 4809,
+    "imageWidth": 3206
+}

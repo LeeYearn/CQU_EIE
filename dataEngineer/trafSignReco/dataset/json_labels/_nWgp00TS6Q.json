@@ -1,0 +1,78 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1721.7391304347825,
+                    3506.5217391304345
+                ],
+                [
+                    1823.9130434782608,
+                    3736.9565217391305
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    3173.9130434782605,
+                    3434.782608695652
+                ],
+                [
+                    3058.695652173913,
+                    3678.260869565217
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1371.497584541063,
+                    4199.51690821256
+                ],
+                [
+                    1403.3816425120774,
+                    4276.811594202899
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1017.8743961352658,
+                    4161.352657004832
+                ],
+                [
+                    1049.7584541062802,
+                    4232.850241545894
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\_nWgp00TS6Q.jpg",
+    "imageData": null,
+    "imageHeight": 6000,
+    "imageWidth": 4000
+}

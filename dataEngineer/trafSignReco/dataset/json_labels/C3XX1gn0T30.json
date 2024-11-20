@@ -1,0 +1,64 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    3202.5,
+                    1616.25
+                ],
+                [
+                    2568.125,
+                    1891.25
+                ],
+                [
+                    0.0,
+                    1608.971027479092
+                ],
+                [
+                    0.0,
+                    1378.75
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        },
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    2955.625,
+                    1885.0
+                ],
+                [
+                    3245.3587662337663,
+                    2719.0
+                ],
+                [
+                    0.0,
+                    2719.0
+                ],
+                [
+                    0.0,
+                    2403.75
+                ],
+                [
+                    721.2500000000002,
+                    1928.75
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\C3XX1gn0T30.jpg",
+    "imageData": null,
+    "imageHeight": 2720,
+    "imageWidth": 4080
+}

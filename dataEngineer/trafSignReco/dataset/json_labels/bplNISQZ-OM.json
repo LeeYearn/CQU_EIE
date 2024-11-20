@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    2770.0,
+                    1795.0
+                ],
+                [
+                    3090.0,
+                    4075.0
+                ],
+                [
+                    2390.0,
+                    4245.0
+                ],
+                [
+                    2260.0,
+                    2055.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\bplNISQZ-OM.jpg",
+    "imageData": null,
+    "imageHeight": 6240,
+    "imageWidth": 4160
+}

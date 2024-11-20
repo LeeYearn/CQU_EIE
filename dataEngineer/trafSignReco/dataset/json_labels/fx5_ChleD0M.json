@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    309.31481481481495,
+                    1486.962962962963
+                ],
+                [
+                    1185.2407407407409,
+                    1477.7037037037037
+                ],
+                [
+                    1237.0925925925926,
+                    1442.5185185185185
+                ],
+                [
+                    396.35185185185196,
+                    1455.4814814814815
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\fx5_ChleD0M.jpg",
+    "imageData": null,
+    "imageHeight": 2048,
+    "imageWidth": 3089
+}

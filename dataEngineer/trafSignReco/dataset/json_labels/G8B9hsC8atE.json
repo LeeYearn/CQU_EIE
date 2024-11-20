@@ -1,0 +1,129 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1603.030303030303,
+                    2373.9393939393935
+                ],
+                [
+                    1535.151515151515,
+                    2522.424242424242
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1366.060606060606,
+                    2460.6060606060605
+                ],
+                [
+                    1330.3030303030303,
+                    2549.6969696969695
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1304.2424242424242,
+                    2456.969696969697
+                ],
+                [
+                    1333.3333333333333,
+                    2552.7272727272725
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "parking",
+            "points": [
+                [
+                    2394.5833333333335,
+                    2091.0714285714284
+                ],
+                [
+                    2436.845238095238,
+                    2132.7380952380954
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "parking",
+            "points": [
+                [
+                    2396.3690476190477,
+                    2029.7619047619048
+                ],
+                [
+                    2439.8214285714284,
+                    2075.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "parking",
+            "points": [
+                [
+                    2909.464285714286,
+                    2094.0476190476193
+                ],
+                [
+                    2952.3214285714284,
+                    2136.904761904762
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    3506.2820512820513,
+                    2392.3076923076924
+                ],
+                [
+                    3575.5128205128203,
+                    2534.6153846153848
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\G8B9hsC8atE.jpg",
+    "imageData": null,
+    "imageHeight": 3440,
+    "imageWidth": 5160
+}

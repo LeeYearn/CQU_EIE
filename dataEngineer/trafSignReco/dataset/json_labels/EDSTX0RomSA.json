@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    531.4285714285716,
+                    531.1428571428573
+                ],
+                [
+                    540.0,
+                    1176.8571428571431
+                ],
+                [
+                    291.42857142857156,
+                    1162.5714285714287
+                ],
+                [
+                    297.1428571428571,
+                    559.7142857142859
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\EDSTX0RomSA.jpg",
+    "imageData": null,
+    "imageHeight": 3628,
+    "imageWidth": 2720
+}

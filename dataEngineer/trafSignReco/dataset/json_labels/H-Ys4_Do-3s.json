@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2694.3888888888887,
+                    2286.3333333333335
+                ],
+                [
+                    2549.9444444444443,
+                    2614.1111111111113
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\H-Ys4_Do-3s.jpg",
+    "imageData": null,
+    "imageHeight": 7006,
+    "imageWidth": 4611
+}

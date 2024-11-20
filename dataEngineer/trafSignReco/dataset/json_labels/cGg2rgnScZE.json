@@ -1,0 +1,78 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    651.5151515151515,
+                    3007.287878787879
+                ],
+                [
+                    760.6060606060606,
+                    3252.7424242424245
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "green light",
+            "points": [
+                [
+                    2019.6969696969695,
+                    3811.8333333333335
+                ],
+                [
+                    1953.030303030303,
+                    4039.1060606060605
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "parking",
+            "points": [
+                [
+                    2159.090909090909,
+                    3899.7121212121215
+                ],
+                [
+                    1986.3636363636363,
+                    4080.0151515151515
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "green light",
+            "points": [
+                [
+                    1626.6666666666665,
+                    3896.6666666666665
+                ],
+                [
+                    1592.2222222222222,
+                    3988.8888888888887
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\cGg2rgnScZE.jpg",
+    "imageData": null,
+    "imageHeight": 5457,
+    "imageWidth": 3070
+}

@@ -1,0 +1,44 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    244.63793103448253,
+                    1288.3793103448277
+                ],
+                [
+                    579.1206896551722,
+                    2164.241379310345
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    4944.637931034483,
+                    2371.137931034483
+                ],
+                [
+                    5117.051724137931,
+                    2774.586206896552
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\5ENb87sPWlc.jpg",
+    "imageData": null,
+    "imageHeight": 3894,
+    "imageWidth": 5841
+}

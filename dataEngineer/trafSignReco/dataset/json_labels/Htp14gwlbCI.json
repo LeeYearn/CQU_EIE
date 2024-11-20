@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1681.151515151515,
+                    1026.6060606060607
+                ],
+                [
+                    1675.090909090909,
+                    2326.6060606060605
+                ],
+                [
+                    2202.3636363636365,
+                    2417.5151515151515
+                ],
+                [
+                    2181.151515151515,
+                    1184.1818181818182
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\Htp14gwlbCI.jpg",
+    "imageData": null,
+    "imageHeight": 3932,
+    "imageWidth": 3932
+}

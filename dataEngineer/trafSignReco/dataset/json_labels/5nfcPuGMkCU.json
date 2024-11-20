@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "yellow light",
+            "points": [
+                [
+                    1522.2222222222222,
+                    2422.222222222222
+                ],
+                [
+                    1517.4603174603174,
+                    3222.222222222222
+                ],
+                [
+                    1201.5873015873017,
+                    3255.5555555555557
+                ],
+                [
+                    1226.984126984127,
+                    2444.4444444444443
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\5nfcPuGMkCU.jpg",
+    "imageData": null,
+    "imageHeight": 6000,
+    "imageWidth": 4000
+}

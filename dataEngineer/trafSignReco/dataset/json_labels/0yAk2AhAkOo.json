@@ -1,0 +1,78 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "green light",
+            "points": [
+                [
+                    1618.888888888889,
+                    3332.055555555555
+                ],
+                [
+                    1691.111111111111,
+                    3552.055555555555
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1535.5555555555554,
+                    3345.3888888888887
+                ],
+                [
+                    1450.0,
+                    3535.3888888888887
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "green light",
+            "points": [
+                [
+                    2625.8695652173915,
+                    2642.6086956521735
+                ],
+                [
+                    2564.1304347826085,
+                    2851.3043478260865
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1198.0434782608697,
+                    2541.7391304347825
+                ],
+                [
+                    1271.9565217391305,
+                    2781.7391304347825
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\0yAk2AhAkOo.jpg",
+    "imageData": null,
+    "imageHeight": 4863,
+    "imageWidth": 3890
+}

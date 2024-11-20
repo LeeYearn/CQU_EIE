@@ -1,0 +1,35 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    2420.2380952380954,
+                    1735.7619047619048
+                ],
+                [
+                    2872.619047619048,
+                    1850.047619047619
+                ],
+                [
+                    2810.714285714286,
+                    2731.0
+                ],
+                [
+                    2367.857142857143,
+                    2550.0476190476193
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\FSkPoTrcKcM.jpg",
+    "imageData": null,
+    "imageHeight": 6062,
+    "imageWidth": 4850
+}

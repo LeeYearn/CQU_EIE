@@ -1,0 +1,68 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    6.000000000000227,
+                    2495.5
+                ],
+                [
+                    3731.0,
+                    2468.0
+                ],
+                [
+                    4186.0,
+                    2480.101063829787
+                ],
+                [
+                    4186.0,
+                    2568.0
+                ],
+                [
+                    0.0,
+                    2675.141666666667
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        },
+        {
+            "label": "zebra",
+            "points": [
+                [
+                    903.5000000000002,
+                    2428.0
+                ],
+                [
+                    2781.0,
+                    2448.0
+                ],
+                [
+                    2773.5,
+                    2418.0
+                ],
+                [
+                    2713.5,
+                    2383.0
+                ],
+                [
+                    1483.5000000000002,
+                    2383.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "polygon",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\h5mnUwpITFQ.jpg",
+    "imageData": null,
+    "imageHeight": 2791,
+    "imageWidth": 4187
+}

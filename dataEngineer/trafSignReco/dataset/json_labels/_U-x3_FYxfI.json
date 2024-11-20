@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "red light",
+            "points": [
+                [
+                    1218.2702702702702,
+                    1064.864864864865
+                ],
+                [
+                    1620.972972972973,
+                    2027.027027027027
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\img\\_U-x3_FYxfI.jpg",
+    "imageData": null,
+    "imageHeight": 3000,
+    "imageWidth": 4496
+}
