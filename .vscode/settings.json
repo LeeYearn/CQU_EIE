@@ -74,7 +74,10 @@
     "numbers": "cpp",
     "semaphore": "cpp",
     "shared_mutex": "cpp",
-    "stop_token": "cpp"
+    "stop_token": "cpp",
+    "format": "cpp",
+    "charconv": "cpp",
+    "text_encoding": "cpp"
   },
   "editor.formatOnSave": true,
   "C_Cpp.intelliSenseEngine": "Tag Parser",
